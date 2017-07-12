@@ -2,16 +2,27 @@
 
 html {
   font-size: 16px;
+  color: #223C4C;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h5 {
   font-family: 'Quattrocento', serif;
+  font-weight: 700;
 }
 
-p, li {
+p, li, h2, h4, h6 {
   font-family: 'Lato', sans-serif;
   letter-spacing: .05rem;
   font-weight: 300;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 1.4;
 }
 
 .flex {
@@ -22,14 +33,23 @@ p, li {
 /* Header */
 
 header {
-  padding: 0 1.5rem;
   background-color: #4e8bb2;
   height: 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+}
+
+div.header_content {
   justify-content: space-between;
+  padding: .65rem 1.5rem;
 }
 
 nav {
   flex-grow: 1;
+  text-align: right;
 }
 
 nav ul li {
@@ -46,9 +66,43 @@ nav ul a {
   height: 2.75rem;
 }
 
-/* Header Adjustment
+/* Header Adjustment */
 
 div.shift {
   position: relative;
   top: 4rem;
-} */
+}
+
+/* Introduction */
+
+div#intro {
+  background-color: #bce5fe;
+  padding: 2rem 1.5rem;
+}
+
+#intro img {
+  width: 60%;
+  border-radius: 50px;
+}
+
+div.intro_titles {
+  padding-left: 2.5rem;
+}
+
+.intro_titles h2 {
+  padding: 1.5rem 0;
+}
+
+.button {
+  text-align: center;
+  background-color: #38637F;
+  border-radius: 15px;
+  padding: .5rem 0;
+  color: #FFF;
+}
+
+/* Information */
+
+#information {
+  background-color: #f0fbff;
+}
