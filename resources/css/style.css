@@ -48,10 +48,6 @@ h6 {
   align-items: center;
 }
 
-.big_img {
-  border-radius: 50px;
-}
-
 /* List Articles */
 
 .info_stack {
@@ -60,7 +56,6 @@ h6 {
 
 .info_post img {
   width: 35%;
-  border-radius: 25px;
 }
 
 .info_post {
@@ -69,7 +64,6 @@ h6 {
 
 .info_post:hover {
   background-color: #bce5fe;
-  border-radius: 25px;
 }
 
 .post_text {
@@ -155,8 +149,8 @@ div.intro_titles {
 .button {
   text-align: center;
   background-color: #4e8bb2;
-  border-radius: 15px;
-  padding: .5rem 0;
+  border-radius: 10px;
+  padding: 1rem 0;
   color: #FFF;
 }
 
@@ -227,13 +221,13 @@ div.track {
   background-color: #f0fbff;
   width: 30%;
   margin: 1rem;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .track img {
   width: 100%;
-  border-top-right-radius: 25px;
-  border-top-left-radius: 25px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 p.track_title {
@@ -310,6 +304,9 @@ div.right {
 }
 
 @media only screen and (min-width: 250px) and (max-width: 740px) {
+
+  /* Universal */
+
   .desktop {
     display: none;
   }
@@ -318,9 +315,11 @@ div.right {
     display: inherit;
   }
 
+  /* Intro */
+
   #intro {
     display: inherit;
-    padding: 2rem 1rem;
+    padding: 0;
   }
 
   #intro img {
@@ -329,8 +328,10 @@ div.right {
   }
 
   div.intro_titles {
-    padding-left: 0;
+    padding: 2rem 1rem;
   }
+
+  /* Info */
 
   .info_stack {
     width: 100%;
@@ -340,18 +341,44 @@ div.right {
     display: inherit;
   }
 
-  .info_post_image{
+  .info_post img{
     width: 100%;
-    border-radius: 25px;
-  }
-
-  .info_post:hover {
-    background-color: #bce5fe;
-    border-radius: 25px;
+    border-radius: 0;
   }
 
   .post_text {
-    padding-left: 1rem;
+    padding: 2rem 1rem .5rem 1rem;
    }
+
+   /* Courses */
+
+  .mobile .button {
+    text-align: left;
+    margin: .5rem 0;
+    padding: 1rem;
+  }
+
+  #courses .mobile {
+    padding-top: 1rem;
+  }
+
+  /* Thesis */
+
+  #thesis {
+    padding-top: 2rem;
+  }
+
+  div.thesis {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  div.thesis_main {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .thesis_main h3 {
+    padding: 1.5rem 0;
+  }
 
 }
