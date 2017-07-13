@@ -121,7 +121,7 @@ nav ul a:hover {
 
 /* Navigation - Mobile */
 
-div.mobile {
+.mobile {
   display: none;
   justify-content: space-between;
 }
@@ -135,7 +135,7 @@ div.shift {
 
 /* Introduction */
 
-div#intro {
+#intro {
   background-color: #bce5fe;
   padding: 2rem 1.5rem;
 }
@@ -217,8 +217,8 @@ div.info_main {
 
 div.courses {
   padding-top: 2rem;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* Individual Tracks */
@@ -242,7 +242,7 @@ p.track_title {
 
 div.track_text {
   padding: 1rem;
-  height: 8rem;
+  min-height: 8rem;
 }
 
 /* Thesis */
@@ -280,4 +280,78 @@ footer h6, footer div, .right ul li {
 
 div.right {
   text-align: right;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  div.track {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 250px) and (max-width: 930px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+}
+
+@media only screen and (min-width: 250px) and (max-width: 740px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: inherit;
+  }
+
+  #intro {
+    display: inherit;
+    padding: 2rem 1rem;
+  }
+
+  #intro img {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  div.intro_titles {
+    padding-left: 0;
+  }
+
+  .info_stack {
+    width: 100%;
+  }
+
+  .info_post {
+    display: inherit;
+  }
+
+  .info_post_image{
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .info_post:hover {
+    background-color: #bce5fe;
+    border-radius: 25px;
+  }
+
+  .post_text {
+    padding-left: 1rem;
+   }
+
 }
