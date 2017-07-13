@@ -10,10 +10,11 @@ h1, h3, h5 {
   font-weight: 700;
 }
 
-p, li, h2, h4, h6 {
+p, li, h2, h4, h6, span {
   font-family: 'Lato', sans-serif;
   letter-spacing: .05rem;
   font-weight: 300;
+  line-height: 1.4;
 }
 
 h1 {
@@ -21,14 +22,59 @@ h1 {
 }
 
 h2 {
-  font-size: 1.75rem;
-  line-height: 1.4;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.title {
+  text-align: center;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: .75rem;
+  letter-spacing: 0;
+  color: #000;
 }
 
 .flex {
   display: flex;
   align-items: center;
 }
+
+.big_img {
+  border-radius: 50px;
+}
+
+/* List Articles */
+
+.info_stack {
+  width: 42%;
+}
+
+.info_post img {
+  width: 35%;
+  border-radius: 25px;
+}
+
+.info_post {
+  padding: 1rem;
+}
+
+.info_post:hover {
+  background-color: #bce5fe;
+  border-radius: 25px;
+}
+
+.post_text {
+  padding-left: 1rem;
+ }
 
 /* Header */
 
@@ -40,6 +86,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 15;
+  border-bottom: 8px solid #bce5fe;
 }
 
 div.header_content {
@@ -47,8 +94,13 @@ div.header_content {
   padding: .65rem 1.5rem;
 }
 
+.logotype, .logo {
+  height: 2.75rem;
+}
+
+/* Navigation - Desktop */
+
 nav {
-  flex-grow: 1;
   text-align: right;
 }
 
@@ -62,8 +114,16 @@ nav ul a {
   color: #fff;
 }
 
-.logotype, .logo {
-  height: 2.75rem;
+nav ul a:hover {
+  text-decoration: none;
+  color: #bce5fe;
+}
+
+/* Navigation - Mobile */
+
+div.mobile {
+  display: none;
+  justify-content: space-between;
 }
 
 /* Header Adjustment */
@@ -82,7 +142,6 @@ div#intro {
 
 #intro img {
   width: 60%;
-  border-radius: 50px;
 }
 
 div.intro_titles {
@@ -95,14 +154,130 @@ div.intro_titles {
 
 .button {
   text-align: center;
-  background-color: #38637F;
+  background-color: #4e8bb2;
   border-radius: 15px;
   padding: .5rem 0;
   color: #FFF;
+}
+
+.button:hover {
+  background-color: #38637F;
 }
 
 /* Information */
 
 #information {
   background-color: #f0fbff;
+}
+
+div.info_main {
+  padding: 2rem 1.5rem;
+  width: 58%;
+  border-right: 1px solid #bce5fe;
+}
+
+.info_main img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.info_main h3 {
+  padding-bottom: 1.5rem;
+}
+
+.info_main h6 {
+  padding: 2.5rem 0;
+}
+
+/* Information Stack Desktop */
+
+.bottom_border {
+  border-bottom: 1px solid #bce5fe;
+}
+
+.post_text a {
+  color: #4e8bb2;
+  text-decoration: none;
+}
+
+.post_text a:hover {
+  color: #38637F;
+}
+
+.post_text p {
+  padding: .5rem 0 1.5rem 0;
+}
+
+/* Courses */
+
+#courses {
+  background-color: #bce5fe;
+  padding: 2rem;
+}
+
+div.courses {
+  padding-top: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Individual Tracks */
+
+div.track {
+  background-color: #f0fbff;
+  width: 30%;
+  margin: 1rem;
+  border-radius: 25px;
+}
+
+.track img {
+  width: 100%;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+p.track_title {
+  padding: .5rem 0;
+}
+
+div.track_text {
+  padding: 1rem;
+  height: 8rem;
+}
+
+/* Thesis */
+
+#thesis {
+  background-color: #f0fbff;
+  padding-top: 2rem;
+}
+
+div.thesis {
+  padding: 2rem 1.5rem;
+  align-items: flex-start;
+}
+
+div.thesis_main {
+  width: 58%;
+  padding: 1rem;
+}
+
+.thesis_main h3 {
+  padding: 1.5rem 0;
+}
+
+/* Footer */
+
+footer {
+  padding: 1.5rem;
+  border-top: 1px solid #bce5fe;
+  justify-content: space-between;
+}
+
+footer h6, footer div, .right ul li {
+  display: inline-block;
+}
+
+div.right {
+  text-align: right;
 }
