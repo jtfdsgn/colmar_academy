@@ -62,7 +62,6 @@ header {
   left: 0;
   width: 100%;
   z-index: 15;
-  border-bottom: 8px solid #bce5fe;
 }
 
 div.header_content {
